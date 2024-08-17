@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Navigation Menu</title>
+    <style>
+
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: grey;
+        }
+        .navbar a {
+            padding: 14px 20px;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+        }
+        .navbar a:hover {
+            background-color: grey;
+        }
+ 
+        .header-image {
+            
+            width: 100%;
+        }
+
+        .header-image img {
+            width: 100%;
+        
+        
+        }
+
+        .hover-text {
+            position: absolute;
+            width: 100%;
+            top: 90%;
+            color: black;
+            font-size: 24px;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            background-color: grey;}
+        
+
+        .header-image:hover .hover-text {
+            opacity: 1;
+        }
+  
+        .profile-section {
+            text-align: center;
+            margin: 50px 0;
+            
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-image: url("a.jpeg");
+            background-size: cover;
+            background-position: center;
+            margin: 0 auto;
+        }
+        
+
+        .job-description {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .divider {
+            width: 60px;
+            height: 2px;
+            background-color: black; /* Replace with your desired line color */
+            margin: 20px auto;
+        }
+
+        .achievements {
+            font-size: 18px;
+            color: grey;
+            margin: 20px 0;
+        }
+        .projects-section {
+            width: 80%;
+            margin: 50px auto;
+        
+        }
+
+        .project-card {
+            display: flex;
+            align-items: center;
+            background-color: whitesmoke;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 8px;
+            background-color: white; /* Replace with your desired background color */
+            background-image: url('project-photo.jpg'); /* Add the project photo here */
+            background-size: cover;
+            background-position: center;
+            margin-right: 20px;
+        }
+
+        .project-details {
+            flex: 1;
+        }
+
+        .project-name {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .project-description {
+            font-size: 16px;
+            color: grey;
+            margin-bottom: 10px;
+        }
+
+      
+          .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        
+        }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+    <div class="header-image">
+        <img src="Kartikey.jpeg" alt="Header Image">
+        <div class="hover-text">Hey, I’m Kartikey</div>
+    </div>
+    
+    <div class="profile-section">
+        <div class="profile-photo"></div>
+        <div class="job-description">I am a Full Stack Developer based in Melbourne,Australia</div>
+        <div class="divider"></div>
+        <div class="achievements">
+            <p>• Here is something which I have done so far.</p>
+            </div>
+            
+
+    <div class="projects-section">
+
+        <div class="project-card">
+            <div class="project-photo" style="background-image: url('b.jpg');"></div>
+            <div class="project-details">
+                <div class="project-name">Project One</div>
+                <div class="project-description">
+                    A brief description of Project One goes here. I have made an arduino uno based project for fish management system.
+                </div>
+                </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-photo" style="background-image: url('c.jpg');"></div>
+            <div class="project-details">
+                <div class="project-name">Project Two</div>
+                <div class="project-description">
+                    A brief description of Project Two goes here.I have made an website for home recipe using HTML and CSS.
+                </div>
+              </div>
+        </div>
+        </div>
+        <div class="divider"></div>
+        <div class="photos">
+        <p> My photos</p>
+        </div>
+
+
+    <div class="gallery">
+        <img src="s.jpg.webp" alt="Gallery Image 1">
+        <img src="images.jpeg" alt="Gallery Image 2">
+        <img src="rajasthan.jpg.webp" alt="Gallery Image 3">
+        <img src="s.jpg.webp" alt="Gallery Image 4">
+        <img src="rajasthan.jpg.webp" alt="Gallery Image 5">
+        <img src="images.jpeg" alt="Gallery Image 6">
+    </div>
+</body>
+</html>
